@@ -1,27 +1,34 @@
-export const ProjectForm = () => {
+import { ContainerForm } from "../../styles/ProjectForm"
+
+import { Input } from "../form/Input";
+import { Select } from "../form/Select";
+import { SubmitButton } from "../form/SubmitButton";
+
+export const ProjectForm = ({ btnText }) => {
   return (
     <>
-      <form>
-        <div>
-          <input type="text" placeholder="Insira o nome do projeto" />
-        </div>
+      <ContainerForm>
+        <Input
+          type='text'
+          text='Nome do projeto'
+          name='name'
+          placeholder='Insira o nome do projeto'
+        />
 
-        <div>
-          <input type="number" placeholder="Insira o orçamento total" />
-        </div>
+        <Input
+          type='number'
+          text='Orçamento do projeto'
+          name='budget'
+          placeholder='Insira o orçamento do projeto'
+        />
 
-        <div>
-          <select name="category_id">
-            <option disabled selected>
-              Seleciona a categoria
-            </option>
-          </select>
-        </div>
+        <Select
+          name='category_id'
+          text='Selecione uma categoria'
+        />
 
-        <div>
-          <input type="submit" value='Criar projeto' />
-        </div>
-      </form>
+        <SubmitButton text={btnText}/>
+      </ContainerForm>
     </>
   )
 }

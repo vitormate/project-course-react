@@ -7,7 +7,7 @@ export const NewProject = () => {
       <ContainerNewProject>
         <h1>Criar Projeto</h1>
         <p>Criar seu projeto para depois adicionar os serviços</p>
-        <ProjectForm/>
+        <ProjectForm btnText='Criar Projeto'/>
       </ContainerNewProject>
     )
   }
