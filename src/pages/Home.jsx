@@ -1,8 +1,5 @@
 import savings from '../img/savings.svg'
 
-import { NavBar } from '../components/layout/NavBar'
-import { Footer } from '../components/layout/Footer'
-
 import { LinkButton } from '../components/layout/LinkButton'
 import { ContainerHome } from '../styles/Home'
 
